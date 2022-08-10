@@ -1,0 +1,81 @@
+.ffy-articles{
+    margin: 4rem 0;
+}
+.ffy-articles .row > div h2{
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #4e4e4e;
+    line-height: 1.3;
+}
+.ffy-articles .row > div a{
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #1A80E3;
+}
+.ffy-articles .row > div:last-child{
+    align-self: flex-end;
+}
+.ffy-articles .row .col-8{
+    width: 66.67%;
+}
+.ffy-articles .row .col-4{
+    width: 33.33%;
+}
+.ffy-articles .icon{
+    width: .8rem;
+    height: .8rem;
+}
+.ffy-articles .icon svg{
+    fill: currentColor;
+}
+.ffy-articles .icon svg path{
+    fill: #1A80E3;
+}
+.ffy-articles .ffy-articles-carousel{
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.ffy-articles .ffy-articles-carousel .article-item a{
+    text-decoration: none;
+    outline: none;
+}
+.ffy-articles .ffy-articles-carousel .article-item picture{
+    display: inline-block;
+}
+.ffy-articles .ffy-articles-carousel .article-item picture img{
+    max-width: 32rem;
+    height: 100%;
+    object-fit: cover;
+}
+.ffy-articles .ffy-articles-carousel .article-item h5{
+    color: #004F96;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+.ffy-articles .ffy-articles-carousel .article-item h3{
+    color: #4e4e4e;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+.ffy-articles .slick-list{
+    margin: 0 -1rem;
+}
+.ffy-articles .slick-slide{
+    margin: 0 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .ffy-articles .wrapper{
+        padding: 0;
+    }
+    .ffy-articles .row .col-6 h2{
+        font-size: 3.2rem;
+    }
+}

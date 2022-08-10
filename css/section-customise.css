@@ -1,0 +1,39 @@
+.ffy-customise .wrapper{
+    box-sizing: border-box;
+    padding: 1.5rem 0;
+    border-top: 1px solid #b5b5b5;
+}
+.ffy-customise .wrapper .row > div{
+    text-align: center;
+}
+
+.ffy-customise p {
+    font-size: 1.8rem;
+    color: #4e4e4e;
+    margin: .25rem 0;
+    display: inline-block;
+}
+.ffy-customise p a{
+    text-decoration: none;
+    color: #1A80E3;
+    font-size: 1.4rem;
+    outline: none;
+}
+.ffy-customise p .responsive-image{
+    display: inline-block;
+    line-height: 1.4rem;
+    vertical-align: middle;
+}
+.ffy-customise p .responsive-image img{
+    height: 1.7rem;
+    width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .ffy-customise .wrapper{
+        padding: 4rem 0;
+    }
+    .ffy-customise p{
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,66 @@
+.ffy-share{
+    background-color: rgba(181,181,181,.2);
+}
+
+.ffy-share .wrapper{
+    padding: 2rem 0;
+}
+.ffy-share .wrapper h3{
+    font-size: 2rem;
+    font-weight: bold;
+    list-style: 1.2;
+    color: #004F96;
+}
+.ffy-share .wrapper p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #4e4e4e;
+    margin: .75rem 0;
+}
+.ffy-share .wrapper .row > div{
+    text-align: center;
+}
+
+.ffy-share .btn-wrapper{
+    text-align: left;
+    margin: 1rem auto;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4rem;
+    padding: .9rem 2.4rem .8rem;
+    background-color: #1a80e3;
+}
+.ffy-share .btn-wrapper > a{
+    padding: 0;
+    min-width: auto;
+    background: none;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.ffy-share .btn-wrapper > a:hover{
+    color: #fff;
+    background: inherit;
+    box-shadow: none;
+}
+.ffy-share p a{
+    text-decoration: none;
+    color: #1A80E3;
+    font-size: 1.4rem;
+    outline: none;
+}
+.ffy-share p .responsive-image{
+    display: inline-block;
+    line-height: 1.4rem;
+    vertical-align: middle;
+}
+.ffy-share p .responsive-image img{
+    height: 1.7rem;
+    width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .ffy-share .wrapper{
+        padding: 3rem 0;
+    }
+}

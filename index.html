@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>FFY Currated Page</title>
+
+        <!-- slick css-->
+        <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+        <!-- Ignore this style as it's copied from bundle css-->
+        <style>
+            @font-face {
+                font-family: fsAlberta;
+                src: url(./fs-alberta/regular/FSAlbertRegular.woff),url(./fs-alberta/regular/FSAlbertRegular.woff2);
+            }
+            @font-face {
+                font-family: MarydaleRegular;
+                src: url(./fc-marydale/regular/MarydaleRegular.woff),url(./fc-marydale/regular/MarydaleRegular.woff2);
+            }
+            html{
+                font-size: 10px;
+            }
+            body{
+                font-family: fsAlberta, helvetica, sans-serif;
+                font-size: 10px;
+                padding: 0;
+                margin: 0;
+            }
+            .wrapper{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 1.2rem;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            @media (min-width: 1024px){
+                .wrapper{
+                    max-width: 144rem;
+                    padding: 0 12rem;
+                }
+                .wrapper{
+                    min-width: 0;
+                    max-width: 844px;
+                    /* padding: 0; */
+                    width: 100%;
+                }
+            }
+            .icon{
+                display: inline-block;
+                vertical-align: middle;
+                height: .6rem;
+                width: .6rem;
+            }
+            .icon svg{
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                font-family: "object-fit: cover;";
+            }
+            .row{
+                gap: 1rem;
+                display: flex;
+                position: relative;
+                font-size: 0;
+                width: 100%;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .row.flow-wrap{
+                flex-flow: wrap;
+            }
+            .row.row-reverse{
+                flex-direction: row-reverse;
+            }
+            .row.column-reverse{
+                flex-direction: column-reverse;
+            }
+            .row [class^=col]{
+                display: inline-block;
+                min-height: 0.125rem;
+                box-sizing: border-box;
+                flex-grow: 0;
+            }
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9,
+            .col-10,
+            .col-11,
+            .col-12 {
+                width: 100%;
+            }
+            h1, h2, h3, h4, h5 {
+                margin: 0;
+                padding: 0;
+            }
+            .copy-01{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+            .heading-04{
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+            .heading-03{
+                font-size: 2.5rem;
+                line-height: 3rem;
+                font-weight: 400;
+            }
+            p{
+                color: #4e4e4e;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+            .responsive-image{
+                display: inline-block;
+                margin: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                .col-1 {
+                    width: 8.33%;
+                }
+                .col-2 {
+                    width: 16.67%;
+                }
+                .col-3 {
+                    width: 25%;
+                }
+                .col-4 {
+                    width: 33.33%;
+                }
+                .col-5 {
+                    width: 41.67%;
+                }
+                .col-6 {
+                    width: 50%;
+                }
+                .col-7 {
+                    width: 58.33%;
+                }
+                .col-8 {
+                    width: 66.67%;
+                }
+                .col-9 {
+                    width: 75%;
+                }
+                .col-10 {
+                    width: 83.33%;
+                }
+                .col-11 {
+                    width: 91.67%;
+                }
+                .col-12 {
+                    width: 100%;
+                }
+                p{
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                }
+                h2.heading-04{
+                    font-size: 2.3rem;
+                    line-height: 2.6rem;
+                }
+                .heading-03{
+                    font-size: 3.2rem;
+                    line-height: 3.4rem;
+                    letter-spacing: -.07rem;
+                }
+            }
+        </style>
+        <!-- Ignore this style as it's copied from bundle css-->
+
+        <!-- enable the line below if you want slick styling-->
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+
+        <link href="./css/ffy-page.css" rel="stylesheet" />
+        <link href="./css/section-articles.css" rel="stylesheet" />
+        <link href="./css/section-customise.css" rel="stylesheet" />
+        <link href="./css/section-share.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div id="app">
+            
+            <section class="ffy-hero">
+                <div class="ffy-hero-wrapper">
+                    <picture class="responsive-image" data-component="responsive-image">
+                        <source media="(min-width: 769px)" srcset="./images/FFY-masthead-image.png">
+                        <img src="./images/FFY-masthead-image.png" alt="TE-2000x914-OL-5mayb.jpg">
+                    </picture>
+                    <span class="bg-overlay"></span>
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copy-content">
+                                    <h1 class="heading-01">Friso for <span>Carmina<span>
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/swoosh.png" type="image/png">
+                                            <img src="./images/swoosh.png" alt="" data-img-load="true">
+                                        </picture></span>
+                                        </span>
+                                    </h1>
+                                    <p>
+                                        <a href="#">
+                                            <span>
+                                                <picture class="responsive-image" data-component="responsive-image">
+                                                    <source srcset="./images/customise.webp" type="image/webp">
+                                                    <img src="./images/customise.png" alt="" data-img-load="true">
+                                                </picture>
+                                            </span>
+                                            Customise your page
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ffy-tools">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-10">
+                            <h3 class="heading-03">Your Tools</h3>
+
+                            <div id="ffy-tools-wrapper" data-theme="immunisation">
+                                <ul class="tools-list">
+                                    <li class="active" data-theme="immunisation">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/immunisation.png" type="image/png">
+                                            <img src="./images/immunisation.png" alt="" data-img-load="true">
+                                        </picture>
+                                        <p>Immunisation Schedule</p>
+                                        <span class="border"></span>
+                                    </li>
+                                    <li data-theme="poo-meter">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/poo-meter.png" type="image/png">
+                                            <img src="./images/poo-meter.png" alt="" data-img-load="true">
+                                        </picture>
+                                        <p>Poo Meter</p>
+                                        <span class="border"></span>
+                                    </li>
+                                    <!-- <li data-theme="baby-reality">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/baby-reality.png" type="image/png">
+                                            <img src="./images/baby-reality.png" alt="" data-img-load="true">
+                                        </picture>
+                                        <p>Baby Reality Checklist</p>
+                                        <span class="border"></span>
+                                    </li> -->
+                                    <li data-theme="pregnancy-calculator">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/pregnancy-calculator.png" type="image/png">
+                                            <img src="./images/pregnancy-calculator.png" alt="" data-img-load="true">
+                                        </picture>
+                                        <p>Pregnancy Calculator</p>
+                                        <span class="border"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="tools-content">
+
+                                    <div class="tool-immunisation hidden"></div>
+
+                                    <div class="tool-poo-meter hidden"></div>
+
+                                    <div class="tool-baby-reality hidden"></div>
+
+                                    <div class="tool-pregnancy-calculator hidden"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ffy-articles">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-8 text-left">
+                            <h2>Articles you may like</h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <a href="#">See all <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span></a>
+                        </div>
+                    </div>
+                    <div class="ffy-articles-carousel">
+                        <div class="article-item">
+                            <a href="#">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source srcset="./images/article-img1.png" type="image/png">
+                                    <img src="./images/article-img1.png" alt="" data-img-load="true">
+                                </picture>
+                                <h5>Lack of Mobility and Physical Challenges</h5>
+                                <h3>Mental changes when a mum’s body is growing bigger and how to navigate it</h3>
+                            </a>
+                        </div>
+                        <div class="article-item">
+                            <a href="#">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source srcset="./images/article-img3.png" type="image/png">
+                                    <img src="./images/article-img3.png" alt="" data-img-load="true">
+                                </picture>
+                                <h5>Post-partum struggles</h5>
+                                <h3>Physical aspects that affect body image &amp; sleep deprivation from baby </h3>
+                            </a>
+                        </div>
+                        <div class="article-item">
+                            <a href="#">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source srcset="./images/article-img2.png" type="image/png">
+                                    <img src="./images/article-img2.png" alt="" data-img-load="true">
+                                </picture>
+                                <h5>Lack of Mobility and Physical Challenges</h5>
+                                <h3>Mental changes when a mum’s body is growing bigger and how to navigate it</h3>
+                            </a>
+                        </div>
+                        <!-- <div class="article-item">
+                            <a href="#">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source srcset="./images/article-img4.png" type="image/png">
+                                    <img src="./images/article-img4.png" alt="" data-img-load="true">
+                                </picture>
+                                <h5>Rebalancing between herself and her baby </h5>
+                                <h3>Balancing between your own well being and mum duties</h3>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="ffy-customise">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Don't see what you need?</p>
+
+                            <br>
+
+                            <p>
+                                <a href="#">
+                                    <span>
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/blue-customise.webp" type="image/webp">
+                                            <img src="./images/blue-customise.png" alt="" data-img-load="true">
+                                        </picture>
+                                    </span>Customise your page
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ffy-share">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Do you enjoy using Friso for You?</h3>
+                            <p>Share with your friends now to help them with their parenthood too!</p>
+                            <div class="btn-wrapper">
+                                <a href="#" class="primary-button label copy-01 strong" data-component="primary-button" data-theme="primary" data-size="medium">
+                                    Invite others to try
+                                </a>
+                            </div>
+                            <p>
+                                <a href="#">
+                                    <span>
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source srcset="./images/share.webp" type="image/webp">
+                                            <img src="./images/share.png" alt="" data-img-load="true">
+                                        </picture>
+                                    </span>Share your page
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <!-- slick js-->
+    <script type="text/javascript" src="js/slick.js"></script>
+    
+    <!-- Your Custom Scripts Here-->
+    <script type="text/javascript" src="./js/ffy-page.js"></script>
+    <script type="text/javascript" src="./js/section-articles.js"></script>
+</html>
