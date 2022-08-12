@@ -15,6 +15,10 @@
                 src: url(./fs-alberta/regular/FSAlbertRegular.woff),url(./fs-alberta/regular/FSAlbertRegular.woff2);
             }
             @font-face {
+                font-family: fsAlbertaBold;
+                src: url(./fs-alberta/bold/FSAlbertBold.woff),url(./fs-alberta/bold/FSAlbertBold.woff2);
+            }
+            @font-face {
                 font-family: MarydaleRegular;
                 src: url(./fc-marydale/regular/MarydaleRegular.woff),url(./fc-marydale/regular/MarydaleRegular.woff2);
             }
@@ -190,6 +194,8 @@
         <link href="./css/section-articles.css" rel="stylesheet" />
         <link href="./css/section-customise.css" rel="stylesheet" />
         <link href="./css/section-share.css" rel="stylesheet" />
+        <link href="./css/flatpicker.css" rel="stylesheet"/>
+        <link href="./css/pregnancy-calculator.css" rel="stylesheet"/>
 
     </head>
     <body>
@@ -281,8 +287,107 @@
 
                                     <div class="tool-baby-reality hidden"></div>
 
-                                    <div class="tool-pregnancy-calculator hidden"></div>
+                                    <div class="tool-pregnancy-calculator hidden">
 
+                                        <div class="pc-step-1 active">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4>Find your due date with your last period.</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="date">The 1st day of your last period</label>
+                                                    <input type="text" id="date" placeholder="Select date">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="cycle">Cycle length</label>
+                                                    <input type="text" id="cycle" maxlength="2" placeholder="28 days (Default)">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="btn-wrapper">
+                                                        <a href="#" class="primary-button label copy-01 strong" id="calculate" data-component="primary-button" data-theme="primary" data-size="medium">
+                                                            Calculate
+                                                        </a>
+                                                    </div>
+        
+                                                    <h3>OR</h3>
+
+                                                    <a href="#" id="ddate-calc">I already know my due date</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pc-step-2a">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4>Your Due Date</h4>
+                                                    <h2>October 17, 2022</h2>
+                                                    <a href="#" id="recalculate">Recalculate <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <hr>
+
+                                                    <h4>Your Pregnancy Timeline</h4>
+                                                    
+                                                    <div class="pregnancy-timeline">
+                                                        <div class="pt-bar-default"></div>
+                                                        <div class="pt-bar-progress"></div>
+                                                        <div class="pt-scrub"></div>
+                                                        <span class="pt-indicator-1"></span>
+                                                        <span class="pt-indicator-2"></span>
+                                                    </div>
+
+                                                    <div class="pt-copy">
+                                                        <div class="pt-copy-i">1<sup>st</sup> Trimester</div>
+                                                        <div class="pt-copy-i">2<sup>nd</sup> Trimester</div>
+                                                        <div class="pt-copy-i">3<sup>rd</sup> Trimester</div>
+                                                    </div>
+
+                                                    <div class="infographic">
+                                                        <div class="info-img">          
+                                                            <picture class="responsive-image" data-component="responsive-image">
+                                                                <source srcset="./images/img-week7.png" type="image/png">
+                                                                <img src="./images/img-week7.png" alt="" data-img-load="true">
+                                                            </picture>
+                                                        </div>
+                                                        <div class="info-copy">
+                                                            <p>At 7 weeks pregnant, your baby is the size of cherry.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pc-step-2b">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4>That's wonderful!</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="ddate">Key in your due date to see how far <br> along you are!</label>
+                                                    <div class="clear-fix"></div>
+                                                    <input type="text" id="ddate" placeholder="Select date">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="btn-wrapper">
+                                                        <a href="#" class="primary-button label copy-01 strong" id="ddate-calc2" data-component="primary-button" data-theme="primary" data-size="medium">
+                                                            Calculate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -404,4 +509,6 @@
     <!-- Your Custom Scripts Here-->
     <script type="text/javascript" src="./js/ffy-page.js"></script>
     <script type="text/javascript" src="./js/section-articles.js"></script>
+    <script type="text/javascript" src="./js/flatpicker.js"></script>
+    <script type="text/javascript" src="./js/pregnancy-calculator.js"></script>
 </html>

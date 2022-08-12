@@ -64,9 +64,10 @@ $(document).ready(function(){
     }
 
     function pregnancyCalculator(toolContent,theme){
-        let data = `<p>${theme}: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna dolor, tempor non ultrices a, elementum vitae nisi. Aenean ullamcorper at mauris a vulputate.</p>`
-        toolContent.innerHTML = '';
-        toolContent.innerHTML = data
+        // let data = `<p>${theme}: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna dolor, tempor non ultrices a, elementum vitae nisi. Aenean ullamcorper at mauris a vulputate.</p>`
+        // toolContent.innerHTML = '';
+        // toolContent.innerHTML = data
+        
     }
 
     function clearActiveClass(els){
