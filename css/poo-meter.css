@@ -18,6 +18,7 @@
   --color-white: #f0eed5;
 
   color: var(--color-gray);
+  padding: 14px 4px;
 }
 
 .poo h4 {
@@ -35,7 +36,7 @@
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.6rem;
   min-width: 10rem;
   margin-inline: auto;
   display: block;
@@ -61,9 +62,29 @@
   cursor: default;
 }
 
+/* * Poo Text Colours */
+.poo-colour-brown {
+  color: var(--color-brown);
+}
+.poo-colour-yellow {
+  color: var(--color-yellow);
+}
+.poo-colour-green {
+  color: var(--color-green);
+}
+.poo-colour-red {
+  color: var(--color-red);
+}
+.poo-colour-white {
+  color: var(--color-gray);
+}
+.poo-colour-black {
+  color: var(--color-black);
+}
+
 /*
-   * Step 01
-   ========================================================================== */
+     * Step 01
+     ========================================================================== */
 
 .poo-options {
   margin: 1.6rem 0 2.4rem;
@@ -94,34 +115,34 @@
   cursor: pointer;
   transition: box-shadow 0.1s;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  animation: fdsseq 0.5s forwards;
-  opacity: 0;
+  /* animation: fdsseq 0.5s forwards;
+    opacity: 0; */
 }
-@media (prefers-reduced-motion: reduce) {
-  .poo .color-label {
-    opacity: 1;
-    animation: none;
-  }
-}
+/* @media (prefers-reduced-motion: reduce) {
+    .color-label {
+      opacity: 1;
+      animation: none;
+    }
+  } */
 
-.poo-options .color-label:nth-child(2) {
-  animation-delay: 0ms;
-}
-.poo-options .color-label:nth-child(4) {
-  animation-delay: 100ms;
-}
-.poo-options .color-label:nth-child(6) {
-  animation-delay: 200ms;
-}
-.poo-options .color-label:nth-child(8) {
-  animation-delay: 300ms;
-}
-.poo-options .color-label:nth-child(10) {
-  animation-delay: 400ms;
-}
-.poo-options .color-label:nth-child(12) {
-  animation-delay: 500ms;
-}
+/* .poo-options .color-label:nth-child(2) {
+    animation-delay: 0ms;
+  }
+  .poo-options .color-label:nth-child(4) {
+    animation-delay: 100ms;
+  }
+  .poo-options .color-label:nth-child(6) {
+    animation-delay: 200ms;
+  }
+  .poo-options .color-label:nth-child(8) {
+    animation-delay: 300ms;
+  }
+  .poo-options .color-label:nth-child(10) {
+    animation-delay: 400ms;
+  }
+  .poo-options .color-label:nth-child(12) {
+    animation-delay: 500ms;
+  } */
 
 .poo .color-label--brown {
   background-color: var(--color-brown);
@@ -159,15 +180,15 @@
 }
 
 /*
-   * Step 02
-   ========================================================================== */
+     * Step 02
+     ========================================================================== */
 
 .poo-step-02 {
   display: none;
 }
 
 .texture-options {
-  margin: 1.6rem 0 2.4rem;
+  margin: 1.6rem -20px 2.4rem;
   text-align: center;
 
   --transition: all 0.8s;
@@ -188,21 +209,21 @@
 }
 
 .texture-option img {
-  height: 64px;
+  height: 72px;
   width: auto;
   margin-inline: auto;
   opacity: 0.4;
   transition: var(--transition);
 }
 .slick-active img {
-  animation: wobble-hor-bottom 0.8s both;
+  /* animation: wobble-hor-bottom 0.8s both; */
   opacity: 1;
 }
-@media (prefers-reduced-motion: reduce) {
-  .slick-active img {
-    animation: none;
-  }
-}
+/* @media (prefers-reduced-motion: reduce) {
+    .slick-active img {
+      animation: none;
+    }
+  } */
 
 .texture-option h5 {
   font-size: 2rem;
@@ -227,8 +248,8 @@
 }
 
 /*
-   * Poo Result
-   ========================================================================== */
+     * Poo Result
+     ========================================================================== */
 
 .poo-result {
   display: none;
@@ -268,33 +289,33 @@
 }
 
 /*
-   * Animation
-   ========================================================================== */
+     * Animation
+     ========================================================================== */
 
 /* * animation wobble-hor-bottom */
-.wobble-ver-right {
-  animation: wobble-hor-bottom 0.8s both;
-}
-
-@keyframes wobble-hor-bottom {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
+/* .wobble-ver-right {
+    animation: wobble-hor-bottom 0.8s both;
   }
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
-}
+  
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  } */

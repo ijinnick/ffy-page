@@ -111,6 +111,9 @@ const showResult = (e, color, texturetype = '') => {
 
       tmpl.querySelector('.result-card-content h5').innerText =
         color.result.heading;
+      tmpl
+        .querySelector('.result-card-content h5')
+        .classList.add(`poo-colour-${color.colour}`);
       tmpl.querySelector('.result-card-content p').innerText =
         color.result.copy;
 
@@ -144,6 +147,9 @@ const showResult = (e, color, texturetype = '') => {
       tmpl.querySelector('img').setAttribute('src', `./images/poo-meter/${result.image}`);
 
       tmpl.querySelector('.result-card-content h5').innerText = result.heading;
+      tmpl
+        .querySelector('.result-card-content h5')
+        .classList.add(`poo-colour-${color.colour}`);
       tmpl.querySelector('.result-card-content p').innerText = result.copy;
 
       // container.appendChild(tmpl);
@@ -217,7 +223,9 @@ const checkStep02 = (poo) => {
         .setAttribute('data-texturetype', `${texture.type}`);
       tmpl.querySelector('h5').innerText = texture.title;
       tmpl.querySelector('p').innerText = texture.copy;
-      tmpl.querySelector('img').setAttribute('src', `./images/poo-meter/${texture.image}`);
+      tmpl
+        .querySelector('img')
+        .setAttribute('src', `./images/poo-meter/${texture.image}`);
       container.appendChild(tmpl);
     });
   } else {
