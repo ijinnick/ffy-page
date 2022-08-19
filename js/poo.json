@@ -1,0 +1,302 @@
+[
+  {
+    "colour": "brown",
+    "type": "good",
+    "result": [
+      {
+        "type": "type-01",
+        "heading": "Brown - Type 01 Result Header",
+        "copy": "Brown - Type 01 Result Copy",
+        "image": "poo-brown-01.png"
+      },
+      {
+        "type": "type-02",
+        "heading": "Brown - Type 02 Result Header",
+        "copy": "Brown - Type 02 Result Copy",
+        "image": "poo-brown-02.png"
+      },
+      {
+        "type": "type-03",
+        "heading": "Brown - Type 03 Result Header",
+        "copy": "Brown - Type 03 Result Copy",
+        "image": "poo-brown-03.png"
+      },
+      {
+        "type": "type-04",
+        "heading": "Brown - Type 04 Result Header",
+        "copy": "Brown - Type 04 Result Copy",
+        "image": "poo-brown-04.png"
+      },
+      {
+        "type": "type-05",
+        "heading": "Brown - Type 05 Result Header",
+        "copy": "Brown - Type 05 Result Copy",
+        "image": "poo-brown-05.png"
+      },
+      {
+        "type": "type-06",
+        "heading": "Brown - Type 06 Result Header",
+        "copy": "Brown - Type 06 Result Copy",
+        "image": "poo-brown-06.png"
+      },
+      {
+        "type": "type-07",
+        "heading": "🚑 🚨🚨🚨🚨🚨🚨🚨🚨 🚑",
+        "copy": "You okay babe?",
+        "image": "poo-brown-07.png"
+      }
+    ],
+    "textures": [
+      {
+        "type": "type-01",
+        "title": "Brown Type 1",
+        "copy": "Brown Type 1 copy",
+        "image": "poo-brown-01.png"
+      },
+      {
+        "type": "type-02",
+        "title": "Brown Type 2",
+        "copy": "Brown Type 2 copy",
+        "image": "poo-brown-02.png"
+      },
+      {
+        "type": "type-03",
+        "title": "Brown Type 3",
+        "copy": "Brown Type 3 copy",
+        "image": "poo-brown-03.png"
+      },
+      {
+        "type": "type-04",
+        "title": "Brown Type 4",
+        "copy": "Brown Type 4 copy",
+        "image": "poo-brown-04.png"
+      },
+      {
+        "type": "type-05",
+        "title": "Brown Type 5",
+        "copy": "Brown Type 5 copy",
+        "image": "poo-brown-05.png"
+      },
+      {
+        "type": "type-06",
+        "title": "Brown Type 6",
+        "copy": "Brown Type 6 copy",
+        "image": "poo-brown-06.png"
+      },
+      {
+        "type": "type-07",
+        "title": "Brown Type 7",
+        "copy": "Brown Type 7 copy",
+        "image": "poo-brown-07.png"
+      }
+    ]
+  },
+  {
+    "colour": "yellow",
+    "type": "good",
+    "result": [
+      {
+        "type": "type-01",
+        "heading": "yellow - Type 01 Result Header",
+        "copy": "yellow - Type 01 Result Copy",
+        "image": "poo-yellow-01.png"
+      },
+      {
+        "type": "type-02",
+        "heading": "yellow - Type 02 Result Header",
+        "copy": "yellow - Type 02 Result Copy",
+        "image": "poo-yellow-02.png"
+      },
+      {
+        "type": "type-03",
+        "heading": "yellow - Type 03 Result Header",
+        "copy": "yellow - Type 03 Result Copy",
+        "image": "poo-yellow-03.png"
+      },
+      {
+        "type": "type-04",
+        "heading": "yellow - Type 04 Result Header",
+        "copy": "yellow - Type 04 Result Copy",
+        "image": "poo-yellow-04.png"
+      },
+      {
+        "type": "type-05",
+        "heading": "yellow - Type 05 Result Header",
+        "copy": "yellow - Type 05 Result Copy",
+        "image": "poo-yellow-05.png"
+      },
+      {
+        "type": "type-06",
+        "heading": "yellow - Type 06 Result Header",
+        "copy": "yellow - Type 06 Result Copy",
+        "image": "poo-yellow-06.png"
+      },
+      {
+        "type": "type-07",
+        "heading": "🚑 🚨🚨🚨🚨🚨🚨🚨🚨 🚑",
+        "copy": "You okay babe?",
+        "image": "poo-yellow-07.png"
+      }
+    ],
+    "textures": [
+      {
+        "type": "type-01",
+        "title": "Yellow Type 1",
+        "copy": "Yellow Type 1 copy",
+        "image": "poo-yellow-01.png"
+      },
+      {
+        "type": "type-02",
+        "title": "Yellow Type 2",
+        "copy": "Yellow Type 2 copy",
+        "image": "poo-yellow-02.png"
+      },
+      {
+        "type": "type-03",
+        "title": "Yellow Type 3",
+        "copy": "Yellow Type 3 copy",
+        "image": "poo-yellow-03.png"
+      },
+      {
+        "type": "type-04",
+        "title": "Yellow Type 4",
+        "copy": "Yellow Type 4 copy",
+        "image": "poo-yellow-04.png"
+      },
+      {
+        "type": "type-05",
+        "title": "Yellow Type 5",
+        "copy": "Yellow Type 5 copy",
+        "image": "poo-yellow-05.png"
+      },
+      {
+        "type": "type-06",
+        "title": "Yellow Type 6",
+        "copy": "Yellow Type 6 copy",
+        "image": "poo-yellow-06.png"
+      },
+      {
+        "type": "type-07",
+        "title": "Yellow Type 7",
+        "copy": "Yellow Type 7 copy",
+        "image": "poo-yellow-07.png"
+      }
+    ]
+  },
+  {
+    "colour": "green",
+    "type": "good",
+    "result": [
+      {
+        "type": "type-01",
+        "heading": "green - Type 01 Result Header",
+        "copy": "green - Type 01 Result Copy",
+        "image": "poo-green-01.png"
+      },
+      {
+        "type": "type-02",
+        "heading": "green - Type 02 Result Header",
+        "copy": "green - Type 02 Result Copy",
+        "image": "poo-green-02.png"
+      },
+      {
+        "type": "type-03",
+        "heading": "green - Type 03 Result Header",
+        "copy": "green - Type 03 Result Copy",
+        "image": "poo-green-03.png"
+      },
+      {
+        "type": "type-04",
+        "heading": "green - Type 04 Result Header",
+        "copy": "green - Type 04 Result Copy",
+        "image": "poo-green-04.png"
+      },
+      {
+        "type": "type-05",
+        "heading": "green - Type 05 Result Header",
+        "copy": "green - Type 05 Result Copy",
+        "image": "poo-green-05.png"
+      },
+      {
+        "type": "type-06",
+        "heading": "green - Type 06 Result Header",
+        "copy": "green - Type 06 Result Copy",
+        "image": "poo-green-06.png"
+      },
+      {
+        "type": "type-07",
+        "heading": "🚑 🚨🚨🚨🚨🚨🚨🚨🚨 🚑",
+        "copy": "You okay babe?",
+        "image": "poo-green-07.png"
+      }
+    ],
+    "textures": [
+      {
+        "type": "type-01",
+        "title": "Green Type 1",
+        "copy": "Green Type 1 copy",
+        "image": "poo-green-01.png"
+      },
+      {
+        "type": "type-02",
+        "title": "Green Type 2",
+        "copy": "Green Type 2 copy",
+        "image": "poo-green-02.png"
+      },
+      {
+        "type": "type-03",
+        "title": "Green Type 3",
+        "copy": "Green Type 3 copy",
+        "image": "poo-green-03.png"
+      },
+      {
+        "type": "type-04",
+        "title": "Green Type 4",
+        "copy": "Green Type 4 copy",
+        "image": "poo-green-04.png"
+      },
+      {
+        "type": "type-05",
+        "title": "Green Type 5",
+        "copy": "Green Type 5 copy",
+        "image": "poo-green-05.png"
+      },
+      {
+        "type": "type-06",
+        "title": "Green Type 6",
+        "copy": "Green Type 6 copy",
+        "image": "poo-green-06.png"
+      },
+      {
+        "type": "type-07",
+        "title": "Green Type 7",
+        "copy": "Green Type 7 copy",
+        "image": "poo-green-07.png"
+      }
+    ]
+  },
+  {
+    "colour": "red",
+    "type": "bad",
+    "result": {
+      "heading": "Red - Bad colour",
+      "copy": "This red colour may indicate health issues, and a pediatrician should be consulted immediately."
+    }
+  },
+  {
+    "colour": "white",
+    "type": "bad",
+    "result": {
+      "heading": "White - Bad colour",
+      "copy": "This white colour may indicate health issues, and a pediatrician should be consulted immediately."
+    }
+  },
+  {
+    "colour": "black",
+    "type": "bad",
+    "result": {
+      "heading": "Black - Bad colour",
+      "copy": "This black colour may indicate health issues, and a pediatrician should be consulted immediately."
+    }
+  }
+]

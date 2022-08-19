@@ -196,6 +196,7 @@
         <link href="./css/section-share.css" rel="stylesheet" />
         <link href="./css/flatpicker.css" rel="stylesheet"/>
         <link href="./css/pregnancy-calculator.css" rel="stylesheet"/>
+        <link href="./css/poo-meter.css" rel="stylesheet"/>
         <link href="./css/section-promotions.css" rel="stylesheet"/>
         <link href="./css/section-products.css" rel="stylesheet"/>
 
@@ -285,7 +286,79 @@
 
                                     <div class="tool-immunisation hidden"></div>
 
-                                    <div class="tool-poo-meter hidden"></div>
+                                    <div class="tool-poo-meter hidden">
+                                        <section class="poo">
+                                          <form class="js-panel js-poo-step-01">
+                                            <h4>What is your little one’s poo colour?</h4>
+                                            <div class="js-poo-options poo-options"></div>
+                                            <div class="text-center mt-6">
+                                              <button
+                                                type="submit"
+                                                class="text-blue-500 bg-white border border-blue-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-blue-200 font-bold rounded-full text-sm px-8 py-1"
+                                                disabled
+                                              >
+                                                Identify poo colour
+                                              </button>
+                                            </div>
+                                          </form>
+
+                                          <div class="js-panel js-poo-step-02 poo-step-02">
+                                            <h4>What about the texture?</h4>
+                                            <div class="js-texture-options texture-options"></div>
+                                            <template id="step02-template">
+                                              <div class="texture-option">
+                                                <div class="texture-option-inner">
+                                                  <img src="" alt="Type" />
+                                                  <h5>Type</h5>
+                                                  <p>Poop is sausage-like but has cracks on the surface</p>
+                                                </div>
+                                              </div>
+                                            </template>
+                                            <button
+                                              class="text-blue-500 bg-white border border-blue-500 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-blue-200 font-bold rounded-full text-sm px-8 py-1"
+                                            >
+                                              Next
+                                            </button>
+                                          </div>
+
+                                          <div class="js-panel js-poo-result poo-result">
+                                            <template id="resultTemplate">
+                                              <div class="result-card">
+                                                <div class="result-card-media">
+                                                  <label class="color-label">
+                                                    <span>Red</span>
+                                                  </label>
+                                                </div>
+                                                <div class="result-card-content">
+                                                  <h5>Bad colour</h5>
+                                                  <p>
+                                                    This colour may indicate health issues, and a pediatrician
+                                                    should be consulted immediately.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </template>
+                                            <template id="resultTemplate-good">
+                                              <div class="result-card">
+                                                <div class="result-card-media">
+                                                  <img class="poo-image" src="" alt="" />
+                                                </div>
+                                                <div class="result-card-content">
+                                                  <h5>Bad colour</h5>
+                                                  <p>
+                                                    This colour may indicate health issues, and a pediatrician
+                                                    should be consulted immediately.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </template>
+
+                                            <div class="result-card-action">
+                                              <button class="js-poo-restart secondary">Restart</button>
+                                            </div>
+                                          </div>
+                                        </section>
+                                    </div>
 
                                     <div class="tool-baby-reality hidden"></div>
 
@@ -756,6 +829,7 @@
     <script type="text/javascript" src="./js/section-articles.js"></script>
     <script type="text/javascript" src="./js/flatpicker.js"></script>
     <script type="text/javascript" src="./js/pregnancy-calculator.js"></script>
+    <script type="text/javascript" src="./js/poo-meter.js"></script>
     <script type="text/javascript" src="./js/section-promotions.js"></script>
     <script type="text/javascript" src="./js/section-products.js"></script>
 </html>
