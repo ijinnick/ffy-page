@@ -32,11 +32,8 @@
 .ffy-articles .icon svg path{
     fill: #1A80E3;
 }
-.ffy-articles .ffy-articles-carousel{
+.ffy-articles .ffy-articles-carousel .slick-list{
     position: relative;
-    gap: 1rem;
-    display: flex;
-    justify-content: center;
     margin-top: 1.5rem;
 }
 .ffy-articles .ffy-articles-carousel .article-item a{
@@ -72,8 +69,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .ffy-articles{
+        margin: 6rem 0 8rem;
+    }
     .ffy-articles .wrapper{
         padding: 0;
+        max-width: 84.4rem;
     }
     .ffy-articles .row .col-6 h2{
         font-size: 3.2rem;
