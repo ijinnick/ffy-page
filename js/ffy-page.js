@@ -4,7 +4,7 @@ $(document).ready(function(){
     let toolsContentList = toolsWrapper.querySelectorAll('.tools-content > div')
 
     init();
-    updateTool(toolsList[0]);
+    updateTool(toolsList[2]);
 
     function init(){
         for(var x=0;x<toolsList.length;x++){

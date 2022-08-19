@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
         <title>FFY Currated Page</title>
 
@@ -197,12 +197,14 @@
         <link href="./css/flatpicker.css" rel="stylesheet"/>
         <link href="./css/pregnancy-calculator.css" rel="stylesheet"/>
         <link href="./css/poo-meter.css" rel="stylesheet"/>
+        <link href="./css/section-promotions.css" rel="stylesheet"/>
+        <link href="./css/section-products.css" rel="stylesheet"/>
 
     </head>
     <body>
         <div id="app">
             
-            <section class="ffy-hero">
+            <section class="ffy-hero-page">
                 <div class="ffy-hero-wrapper">
                     <picture class="responsive-image" data-component="responsive-image">
                         <source media="(min-width: 769px)" srcset="./images/FFY-masthead-image.png">
@@ -369,18 +371,22 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <label for="date">The 1st day of your last period</label>
-                                                    <input type="text" id="date" placeholder="Select date">
-                                                </div>
-                                                <div class="col-6">
-                                                    <label for="cycle">Cycle length</label>
-                                                    <input type="text" id="cycle" maxlength="2" placeholder="28 days (Default)">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="date">The 1st day of your last period</label>
+                                                            <input type="text" id="date" placeholder="Select date">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="cycle">Cycle length</label>
+                                                            <input type="text" id="cycle" maxlength="2" placeholder="28 days (Default)">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-8">
+                                                <div class="col-12 text-center">
                                                     <div class="btn-wrapper">
                                                         <a href="#" class="primary-button label copy-01 strong" id="calculate" data-component="primary-button" data-theme="primary" data-size="medium">
                                                             Calculate
@@ -397,12 +403,12 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <h4>Your Due Date</h4>
-                                                    <h2>October 17, 2022</h2>
+                                                    <h2 id="ddate-text">October 17, 2022</h2>
                                                     <a href="#" id="recalculate">Recalculate <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span></a>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-6">
+                                                <div class="col-8">
                                                     <hr>
 
                                                     <h4>Your Pregnancy Timeline</h4>
@@ -435,17 +441,23 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="pc-step-2b">
                                             <div class="row">
-                                                <div class="col-12">
+                                                <div class="col-12 text-center">
                                                     <h4>That's wonderful!</h4>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <label for="ddate">Key in your due date to see how far <br> along you are!</label>
+                                                <div class="col-6 text-center">
+                                                    <label for="ddate-date">Key in your due date to see how far <br> along you are!</label>
+                                                    <div class="error-message"><sup>*</sup>The input date is not valid. Please try again.</div>
                                                     <div class="clear-fix"></div>
-                                                    <input type="text" id="ddate" placeholder="Select date">
+                                                    <div class="ddate-wrapper">
+                                                        <input type="text" id="ddate-date" maxlength="2" placeholder="DD">
+                                                        <input type="text" id="ddate-month" maxlength="2" placeholder="MM">
+                                                        <input type="text" id="ddate-year" maxlength="4" placeholder="YYYY">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -571,6 +583,239 @@
                     </div>
                 </div>
             </section>
+
+
+            <section class="ffy-promotions">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-8 text-left">
+                            <h2>Your promos</h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <a href="#">See all <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span></a>
+                        </div>
+                    </div>
+                    <div class="ffy-promotions-list">
+                        <div class="ffy-promotion-item">
+                            <picture class="responsive-image" data-component="responsive-image">
+                                <source media="(min-width: 769px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <source media="(min-width: 481px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <img src="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_mobile/public/2022-03/20220304_Friso%20Safety%20banner_600x680.png?itok=F_gcc_FE" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                            </picture>
+
+                            <div class="gradient-background"></div>
+
+                            <div class="copy">
+                                <div class="promo-ribbon">1st August 2022 - 31st August 2022</div>
+                                <a href="#" target="_self" tabindex="0">
+                                    <div class="title"><h2>環球嚴格食品安全標準</h2></div>
+                                    <div class="description copy-01">
+                                        <p>荷蘭美素佳兒<sup>®</sup>由奶源開始，到生產及產品儲存，我們都對品質監控要求嚴謹至極，一絲不苟。</p>
+                                    </div>
+                                </a>
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">更多詳情
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ffy-promotion-item">
+                            <picture class="responsive-image" data-component="responsive-image">
+                                <source media="(min-width: 769px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <source media="(min-width: 481px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <img src="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_mobile/public/2022-03/20220304_Friso%20Safety%20banner_600x680.png?itok=F_gcc_FE" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                            </picture>
+
+                            <div class="gradient-background"></div>
+
+                            <div class="copy">
+                                <a href="#" target="_self" tabindex="0">
+                                    <div class="title"><h2>環球嚴格食品安全標準</h2></div>
+                                    <div class="description copy-01">
+                                        <p>荷蘭美素佳兒<sup>®</sup>由奶源開始，到生產及產品儲存，我們都對品質監控要求嚴謹至極，一絲不苟。</p>
+                                    </div>
+                                </a>
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">更多詳情
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ffy-promotion-item">
+                            <picture class="responsive-image" data-component="responsive-image">
+                                <source media="(min-width: 769px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <source media="(min-width: 481px)" srcset="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_desktop/public/2022-03/20220304_Friso%20Safety%20banner_1460x560.png?itok=Ou-C-MVv" data-img-load="true">
+                                <img src="https://www.friso.com.hk/sites/g/files/jgsirj116/files/styles/featured_card_mobile/public/2022-03/20220304_Friso%20Safety%20banner_600x680.png?itok=F_gcc_FE" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                            </picture>
+
+                            <div class="gradient-background"></div>
+
+                            <div class="copy">
+                                <a href="#" target="_self" tabindex="0">
+                                    <div class="title"><h2>環球嚴格食品安全標準</h2></div>
+                                    <div class="description copy-01">
+                                        <p>荷蘭美素佳兒<sup>®</sup>由奶源開始，到生產及產品儲存，我們都對品質監控要求嚴謹至極，一絲不苟。</p>
+                                    </div>
+                                </a>
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">更多詳情
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ffy-products">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12 text-left">
+                            <h2>Natural nourishment for you and your child</h2>
+                        </div>
+                    </div>
+                    <div class="ffy-products-list">
+                        <div class="ffy-product-item">
+                            <div class="image-content-wrapper">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source media="(min-width: 769px)" srcset="./images/product-image.png" data-img-load="true">
+                                    <source media="(min-width: 481px)" srcset="./images/product-image.png" data-img-load="true">
+                                    <img src="./images/product-image.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                </picture>
+                                <div class="image-content">
+                                    <div class="product-packshot">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source media="(min-width: 769px)" srcset="./images/product-packshot.png" data-img-load="true">
+                                            <source media="(min-width: 481px)" srcset="./images/product-packshot.png" data-img-load="true">
+                                            <img src="./images/product-packshot.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                        </picture>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="product-ribbon">ON</div>
+                                        <h2>Friso<sup>®</sup> Gold 3</h2>
+                                        <p>For toddlers 1-3 years old</p>
+                                    </div>
+                                </div>
+
+                                <div class="gradient-background"></div>
+                            </div>
+
+                            <div class="sample-ribbon">
+                                <p>Sample available</p>
+                            </div>
+
+                            <div class="copy-content">
+                                
+                                <p>Nourish your young explorer with growing up milk that’s rich in prebiotics, probiotics, DHA, nucleotides, Vit D and Selenium.</p>
+
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">Find out more
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ffy-product-item">
+                            <div class="image-content-wrapper">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source media="(min-width: 769px)" srcset="./images/product-image2.png" data-img-load="true">
+                                    <source media="(min-width: 481px)" srcset="./images/product-image2.png" data-img-load="true">
+                                    <img src="./images/product-image2.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                </picture>
+                                <div class="image-content">
+                                    <div class="product-packshot">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source media="(min-width: 769px)" srcset="./images/product-packshot2.png" data-img-load="true">
+                                            <source media="(min-width: 481px)" srcset="./images/product-packshot2.png" data-img-load="true">
+                                            <img src="./images/product-packshot2.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                        </picture>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="product-ribbon">ON</div>
+                                        <h2>Friso<sup>®</sup> Gold 4</h2>
+                                        <p>For children 3 years onwards</p>
+                                    </div>
+                                </div>
+
+                                <div class="gradient-background"></div>
+                            </div>
+
+                            <div class="sample-ribbon">
+                                <p>Sample available</p>
+                            </div>
+
+                            <div class="copy-content">
+                                
+                                <p>Nourish your young explorer with growing up milk that’s rich in prebiotics, probiotics, DHA, nucleotides, Vit D and Selenium.</p>
+
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">Find out more
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ffy-product-item">
+                            <div class="image-content-wrapper">
+                                <picture class="responsive-image" data-component="responsive-image">
+                                    <source media="(min-width: 769px)" srcset="./images/product-image.png" data-img-load="true">
+                                    <source media="(min-width: 481px)" srcset="./images/product-image.png" data-img-load="true">
+                                    <img src="./images/product-image.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                </picture>
+                                <div class="image-content">
+                                    <div class="product-packshot">
+                                        <picture class="responsive-image" data-component="responsive-image">
+                                            <source media="(min-width: 769px)" srcset="./images/product-packshot.png" data-img-load="true">
+                                            <source media="(min-width: 481px)" srcset="./images/product-packshot.png" data-img-load="true">
+                                            <img src="./images/product-packshot.png" alt="20220304_Friso Safety banner_600x680.png" data-img-load="true">
+                                        </picture>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="product-ribbon">ON</div>
+                                        <h2>Friso<sup>®</sup> Gold 3</h2>
+                                        <p>For toddlers 1-3 years old</p>
+                                    </div>
+                                </div>
+
+                                <div class="gradient-background"></div>
+                            </div>
+
+                            <div class="sample-ribbon">
+                                <p>Sample available</p>
+                            </div>
+
+                            <div class="copy-content">
+                                
+                                <p>Nourish your young explorer with growing up milk that’s rich in prebiotics, probiotics, DHA, nucleotides, Vit D and Selenium.</p>
+
+                                <div class="read-more">
+                                    <div class="link copy-02 strong" data-component="link" data-margin-top="1" data-margin-top-desktop="1">
+                                        <a href="#" target="_self" tabindex="0">Find out more
+                                            <span class="icon main-icon" data-component="icon" data-icon="play"><svg viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg"><path d="M3.27 1.102L13.956 11.79a1.5 1.5 0 0 1 0 2.121L3.269 24.598a1.5 1.5 0 0 1-2.56-1.06V2.163a1.5 1.5 0 0 1 2.56-1.06z" fill="#FFFFFF" fill-rule="nonzero"></path></svg></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
         </div>
 
@@ -585,4 +830,6 @@
     <script type="text/javascript" src="./js/flatpicker.js"></script>
     <script type="text/javascript" src="./js/pregnancy-calculator.js"></script>
     <script type="text/javascript" src="./js/poo-meter.js"></script>
+    <script type="text/javascript" src="./js/section-promotions.js"></script>
+    <script type="text/javascript" src="./js/section-products.js"></script>
 </html>
